@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.search {
+  position: relative;
+  height: 50px;
+}
+
+.search .input {
+  background-color: rgb(245, 228, 228);
+  border: 0;
+  font-size: 18px;
+  height: 40px;
+  width: 50px;
+  transition: width 0.3s ease;
+}
+
+.btn {
+  background-color: rgb(235, 189, 189);
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 50px;
+  transition: transform 0.3s ease;
+}
+
+.btn:focus,
+.input:focus {
+  outline: none;
+}
+
+.search.active .input {
+  width: 200px;
+}
+
+.search.active .btn {
+  transform: translateX(198px);
+}
